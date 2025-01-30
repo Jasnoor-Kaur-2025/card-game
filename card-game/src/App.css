@@ -1,0 +1,216 @@
+/*THE FONTS NEEDED:*/
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&display=swap');
+*{
+  padding: 0%;
+  margin: 0%;
+  overflow-y: hidden;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  width: 50%;
+  height: 50%;
+  background-color: rgb(119, 195, 113);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.popup-content h1 {
+  font-family: "Irish Grover", serif;
+  font-size: 70px;
+  margin-bottom: 30px;
+  color: rgb(49, 83, 56);
+}
+
+.popup-content p {
+  font-family: "Lexend Exa", serif;
+  font-size: 50px;
+  color: white;
+  margin: 10px 0;
+  margin-bottom: 70px;
+}
+
+.popup-content button {
+  background-color: red;
+  border: none;
+  padding: 30px 70px;
+  font-size: 30px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.popup-content button:hover {
+  background-color: rgb(173, 2, 2);
+}
+
+.mid{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+
+.mid img{
+  height: 150px;
+}
+
+header{
+  background-color: rgb(119, 195, 113);
+  height: 18vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.playerImages{
+  width: 110px;
+  border-radius: 55px;
+  margin: 10px;
+}
+
+.player1, .player2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.score {
+  font-size: 60px;
+  font-family:  "Lexend Exa", serif;
+  color: rgb(253, 220, 0);
+}
+
+.centre{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Title{
+  font-family: "Irish Grover", serif;
+  font-size: 80px;
+  color: white;
+}
+
+.centre button{
+  background: none;
+  border: none;
+}
+
+.centre button img{
+  width: 48px;
+}
+
+.centre button:hover{
+  background-color: rgb(49, 83, 56);
+}
+
+main{
+  padding-top: 15px;
+  background-color: rgb(49, 83, 56);
+  min-height: 82vh;
+  max-height: 82vh;
+  overflow-y: hidden;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  gap: 10px;
+}
+
+.card img {
+  width: 90px;
+  height: auto;
+  cursor: pointer;
+}
+
+.highlight {
+  border: 10px solid yellow;
+}
+
+.hide{
+  visibility: hidden;
+  pointer-events: none;
+}
+
+
+.over-popup-overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.game-over-popup{
+  width: 50%;
+  height: 50%;
+  background-color: rgb(119, 195, 113);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.game-over-popup h2{
+  font-family: "Irish Grover", serif;
+  font-size: 70px;
+  margin-bottom: 30px;
+  color: rgb(49, 83, 56);
+}
+
+.game-over-popup p{
+  font-family: "Lexend Exa", serif;
+  font-size: 50px;
+  color: white;
+  margin: 10px 0;
+  margin-bottom: 70px;
+}
+
+.game-over-popup button{
+  background-color: red;
+  border: none;
+  padding: 30px 70px;
+  font-size: 30px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.game-over-popup button:hover {
+  background-color: rgb(173, 2, 2);
+}
+
+
+@keyframes fallDown {
+  0% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(100vh); opacity: 0; }
+}
+
+.fall-animation {
+  animation: fallDown 1s ease-in forwards;
+}
+
+
